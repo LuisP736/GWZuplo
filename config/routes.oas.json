@@ -21,11 +21,9 @@
         "x-zuplo-route": {
           "corsPolicy": "none",
           "handler": {
-            "export": "urlForwardHandler",
-            "module": "$import(@zuplo/runtime)",
-            "options": {
-              "baseUrl": "${env.ORIGEN_ATT}"
-            }
+            "export": "default",
+            "module": "$import(./modules/forward-f5)",
+            "options": {}
           },
           "policies": {
             "inbound": []
@@ -85,16 +83,14 @@
         "pathMode": "open-api"
       },
       "post": {
-        "summary": "New Route",
+        "summary": "POST ML ",
         "description": "",
         "x-zuplo-route": {
           "corsPolicy": "none",
           "handler": {
-            "export": "urlForwardHandler",
-            "module": "$import(@zuplo/runtime)",
-            "options": {
-              "baseUrl": "${env.ORIGEN_ATT}"
-            }
+            "export": "default",
+            "module": "$import(./modules/forward-f5)",
+            "options": {}
           },
           "policies": {
             "inbound": []
