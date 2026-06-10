@@ -83,7 +83,7 @@
         "pathMode": "open-api"
       },
       "post": {
-        "summary": "POST ML ",
+        "summary": "New Route",
         "description": "",
         "x-zuplo-route": {
           "corsPolicy": "none",
